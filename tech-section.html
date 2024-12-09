@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest in tech with Zippi's detailed article on upcoming innovations and trends.">
+    <title>Zippi - Latest in Tech</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+<header>
+    <h1>Zippi</h1>
+    <p>Your Daily Dose of Tech News</p>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+</header>
+
+<nav>
+    <a href="tech-section.html">Tech</a>
+    <a href="#entertainment">Entertainment</a>
+    <a href="#sports">Sports</a>
+    <a href="#lifestyle">Lifestyle</a>
+    <a href="#opinion">Opinion</a>
+    <a href="#forum">Forum</a>
+    <a href="quiz-section.html">Fun</a>
+    <a href="#leaderboard">Leaderboard</a>
+</nav>
+
+<section class="tech-articles">
+    <h2>Tech Articles</h2>
+    <div class="article-list">
+        <!-- Article 1 -->
+        <article class="article-preview">
+            <img src="images/chatgpt.jpg" alt="AI Future" class="article-image">
+            <div class="article-info">
+                <h3><a href="tech-article1.html">The Future of Artificial Intelligence</a></h3>
+                <p>Discover how AI is transforming industries and shaping the future. Click to read more.</p>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-preview">
+            <img src="images/quantum-computing.jpg" alt="Quantum Computing" class="article-image">
+            <div class="article-info">
+                <h3><a href="tech-article2.html">Quantum Computing: The Next Frontier</a></h3>
+                <p>Learn about the incredible potential of quantum computing. Click to dive in.</p>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-preview">
+            <img src="images/blockchain.jpg" alt="Blockchain Revolution" class="article-image">
+            <div class="article-info">
+                <h3><a href="tech-article3.html">Blockchain: More Than Just Cryptocurrency</a></h3>
+                <p>Explore how blockchain technology is disrupting traditional industries. Read more.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<a href="index.html" class="button">Back to Zippi</a>
+
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h2>Comments</h2>
+        <div class="comment-input-section">
+            <input type="text" id="comment-name" placeholder="Your Name" />
+            <textarea id="comment-message" placeholder="Write your comment here..."></textarea>
+            <button id="post-comment" aria-label="Post your comment">Post Comment</button>
+            <p id="error-message" style="color: red;">Both fields are required!</p>
+            <ul class="comment-list" id="commentList">
+            </div>
+            <div id="comments-display" class="comments-list">
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+<footer>
+    <p>&copy; 2024 <a href="index.html" >Zippi</a> | Designed for the Next Generation</p>
+</footer>
+
+<script src="scripts.js" defer></script>
+
+</body>
+</html>

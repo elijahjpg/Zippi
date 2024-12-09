@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #b02c7a; /* Pink */
+    --secondary-color: #32a852; /* Green */
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --font-family: 'Courier New', Courier, monospace;
+}
+
+/* General Styles */
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #b02c7a; /* Pink */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #32a852; /* Green */
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .tech-articles {
+            padding: 20px;
+            background-color: var(--background-color);
+        }
+        
+        .article-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-preview {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        
+        .article-preview:hover {
+            transform: scale(1.03);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .article-info {
+            padding: 15px;
+        }
+        
+        .article-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            color: var(--primary-color);
+        }
+        
+        .article-info p {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 0.9em;
+        }
+        
+        .article-info a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+/* Define default (light mode) theme variables */
+:root {
+    --background-color: #ffffff;
+    --primary-color: #b02c7a; /* pink */
+    --secondary-color: #32a852; /* green */
+    --text-color: #333333;
+    --article-background: #f9f9f9;
+}
+
+/* Define dark mode theme variables */
+:root.dark-mode {
+    --background-color: #1a1a1a;
+    --primary-color: #b02c7a; /* brighter pink */
+    --secondary-color: #32a852; /* brighter green */
+    --text-color: #e0e0e0;
+    --article-background: #1e1e1e;
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #32a852; /* Green */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.article-preview {
+    background-color: var(--article-background);
+}
+
+.article-info h3 a {
+    color: var(--primary-color);
+}
+
+button, input, textarea {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comments-container {
+    margin: 2rem auto;
+    max-width: 600px;
+    background-color: var(--bg-color); /* Adjust based on light/dark mode */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+
+.comment-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-input-section input,
+.comment-input-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+}
+
+.comment-input-section textarea {
+    resize: none;
+    height: 100px;
+}
+
+.comment-input-section button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-input-section button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+#error-message {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.comments-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-card {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-card h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.comment-card p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

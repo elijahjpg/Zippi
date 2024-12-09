@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zippi - A news website for young people, keeping you updated on the latest trends, tech, entertainment, and more!">
+    <title>Zippi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Zippi</h1>
+    <p>Your Daily Dose of Trending News</p>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+</header>
+
+<section id="quiz-section">
+    <h2>Quizzes</h2>
+    <div class="quiz-list">
+        <!-- Quiz 1 -->
+        <div class="quiz-option">
+            <h3>News of the Week Quiz</h3>
+            <p>Think you're up-to-date with the latest news? Take this quiz to find out!</p>
+            <button class="start-quiz" data-quiz="1">Start Quiz</button>
+        </div>
+
+        <!-- Quiz 2 -->
+        <div class="quiz-option">
+            <h3>Tech Trivia</h3>
+            <p>How much do you know about the latest tech innovations? Test your knowledge!</p>
+            <button class="start-quiz" data-quiz="2">Start Quiz</button>
+        </div>
+
+        <!-- Quiz 3 -->
+        <div class="quiz-option">
+            <h3>Pop Culture Quiz</h3>
+            <p>Are you up-to-date on the latest in entertainment? Take this quiz to find out!</p>
+            <button class="start-quiz" data-quiz="3">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Content (hidden until quiz is selected) -->
+    <div id="quiz-container" class="quiz-container" style="display: none;">
+        <h2 id="quiz-title">Quiz Title</h2>
+        <div id="quiz-question"></div>
+        <div id="quiz-options"></div>
+        <button id="next-question" style="display: none;">Next Question</button>
+        <button id="submit-quiz" style="display: none;">Submit Quiz</button>
+    <!-- Name Input for Leaderboard -->
+        <div id="name-input-container" style="display: none;">
+            <label for="userName">Enter Your Name:</label>
+            <input type="text" id="userName" placeholder="Your Name" required />
+            <button id="submit-name">Submit Name</button>
+        </div>
+    </div>
+    <p id="quiz-result"></p>
+</section>
+
+<footer>
+    © 2024 <a href="index.html" style="color: inherit;">Zippi</a> | Designed for the Next Generation
+</footer>
+
+<script src="scripts.js" defer></script>
+
+</body>
+</html>

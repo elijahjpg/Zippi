@@ -1,0 +1,396 @@
+:root {
+    --primary-color: #b02c7a; /* Pink */
+    --secondary-color: #32a852; /* Green */
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --font-family: 'Courier New', Courier, monospace;
+}
+
+/* General Styles */
+/* Light Mode */
+:root {
+    --background-color: #ffffff;
+    --primary-color: #b02c7a; /* pink */
+    --secondary-color: #32a852; /* green */
+    --text-color: #333333;
+    --article-background: #f9f9f9;
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #b02c7a; /* Pink */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #32a852; /* Green */
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        article {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(158, 4, 104, 0.1);
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+        footer {
+            background-color: #32a852; /* Green */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        section#forum, section#fun, section#leaderboard {
+            background-color: #ffffff;
+            padding: 40px;
+            margin-top: 40px;
+        }
+        section h2 {
+            text-align: center;
+            color: #b02c7a; /* Pink */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px;
+            background-color: #b02c7a; /* Pink */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .post {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .quiz {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .quiz button {
+            background-color: #b02c7a; /* Pink */
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .leaderboard {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .leaderboard ul {
+            list-style: none;
+            padding: 0;
+        }
+        .leaderboard li {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            main {
+                flex-direction: column;
+            }
+        }
+    }
+
+/* Dark Mode */
+:root.dark-mode {
+    --background-color: #1a1a1a;
+    --primary-color: #b02c7a; /* brighter pink */
+    --secondary-color: #32a852; /* brighter green */
+    --text-color: #e0e0e0;
+    --article-background: #1e1e1e;
+    
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+    }
+    header {
+        background-color: #b02c7a; /* Pink */
+        color: rgb(29, 28, 28);
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #32a852; /* Green */
+        padding: 15px 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    article {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(137, 136, 137, 0.1);
+        width: 300px;
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+    article img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+    footer {
+        background-color: #32a852; /* Green */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    section#forum, section#fun, section#leaderboard {
+        background-color: #1a1a1a;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    section h2 {
+        text-align: center;
+        color: #b02c7a; /* Pink */
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    form input, form textarea {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    form button {
+        padding: 10px;
+        background-color: #b02c7a; /* Pink */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .post {
+        background-color: #454444;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .quiz {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .quiz button {
+        background-color: #b02c7a; /* Pink */
+        border: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .leaderboard {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .leaderboard ul {
+        list-style: none;
+        padding: 0;
+    }
+    .leaderboard li {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+        }
+        main {
+            flex-direction: column;
+        }
+    }
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/* General Quiz Styles */
+#quiz-section {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.quiz-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quiz-option {
+    background-color: var(--article-background);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.quiz-option h3 {
+    color: var(--primary-color);
+}
+
+.quiz-option button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.quiz-option button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+#quiz-container {
+    margin-top: 30px;
+}
+
+#quiz-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#quiz-options {
+    margin-top: 20px;
+}
+
+button#next-question, button#submit-quiz {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button#next-question:hover, button#submit-quiz:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Leaderboard Styles */
+#leaderboard-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--article-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#leaderboard-section h2 {
+    color: var(--primary-color);
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+#leaderboard-list li {
+    margin: 10px 0;
+    color: var(--text-color);
+}
